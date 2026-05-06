@@ -1,0 +1,62 @@
+[
+  {
+    "id": "karachi-grill",
+    "name": "Karachi Grill House",
+    "area": "Gulshan-e-Iqbal",
+    "whatsapp": "923001234567",
+    "riderName": "Ahmed Raza",
+    "riderPhone": "923007654321",
+    "bannerUrl": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80",
+    "rating": 4.8,
+    "deliveryTime": "25–35 min",
+    "categories": ["Burgers", "BBQ", "Rolls", "Drinks"]
+  },
+  {
+    "id": "lahori-chaska",
+    "name": "Lahori Chaska",
+    "area": "DHA Phase 5",
+    "whatsapp": "923009876543",
+    "riderName": "Bilal Khan",
+    "riderPhone": "923005678901",
+    "bannerUrl": "https://images.unsplash.com/photo-1574484284002-952d92456975?w=800&q=80",
+    "rating": 4.6,
+    "deliveryTime": "20–30 min",
+    "categories": ["Biryani", "Karahi", "Desi", "Drinks"]
+  },
+  {
+    "id": "pizza-corner",
+    "name": "Pizza Corner",
+    "area": "Clifton Block 9",
+    "whatsapp": "923003456789",
+    "riderName": "Usman Ali",
+    "riderPhone": "923001234599",
+    "bannerUrl": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80",
+    "rating": 4.5,
+    "deliveryTime": "30–45 min",
+    "categories": ["Pizza", "Pasta", "Burgers", "Desserts"]
+  },
+  {
+    "id": "chai-wala",
+    "name": "Chai Wala Express",
+    "area": "Saddar, Karachi",
+    "whatsapp": "923008765432",
+    "riderName": "Hamza",
+    "riderPhone": "923002345678",
+    "bannerUrl": "https://images.unsplash.com/photo-1571091655789-405eb7a3a3a8?w=800&q=80",
+    "rating": 4.9,
+    "deliveryTime": "10–20 min",
+    "categories": ["Chai", "Snacks", "Parathas", "Sandwiches"]
+  },
+  {
+    "id": "desi-dawat",
+    "name": "Desi Dawat",
+    "area": "North Nazimabad",
+    "whatsapp": "923006789012",
+    "riderName": "Farhan",
+    "riderPhone": "923009012345",
+    "bannerUrl": "https://images.unsplash.com/photo-1631515242808-497c3fbd3972?w=800&q=80",
+    "rating": 4.7,
+    "deliveryTime": "35–50 min",
+    "categories": ["Nihari", "Paya", "Halwa Puri", "Desi"]
+  }
+]

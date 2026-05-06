@@ -1,0 +1,310 @@
+[
+  {
+    "id": "kg-burger-1",
+    "shopId": "karachi-grill",
+    "name": "Smash Burger",
+    "description": "Double smash patty, cheddar, special sauce, crispy onions",
+    "price": 650,
+    "category": "Burgers"
+  },
+  {
+    "id": "kg-burger-2",
+    "shopId": "karachi-grill",
+    "name": "Zinger Burger",
+    "description": "Crispy fried chicken, coleslaw, jalapeños, garlic mayo",
+    "price": 550,
+    "category": "Burgers"
+  },
+  {
+    "id": "kg-burger-3",
+    "shopId": "karachi-grill",
+    "name": "BBQ Beef Burger",
+    "description": "Beef patty, smoky BBQ sauce, caramelised onions, pickles",
+    "price": 700,
+    "category": "Burgers"
+  },
+  {
+    "id": "kg-bbq-1",
+    "shopId": "karachi-grill",
+    "name": "Seekh Kebab (4 pcs)",
+    "description": "Charcoal-grilled minced beef with spices, served with raita",
+    "price": 480,
+    "category": "BBQ"
+  },
+  {
+    "id": "kg-bbq-2",
+    "shopId": "karachi-grill",
+    "name": "Chicken Tikka",
+    "description": "Marinated bone-in chicken tikka, 4 pieces with naan",
+    "price": 780,
+    "category": "BBQ"
+  },
+  {
+    "id": "kg-bbq-3",
+    "shopId": "karachi-grill",
+    "name": "Mixed Grill Platter",
+    "description": "Seekh kebab, chicken tikka, boti, served with bread & raita",
+    "price": 1400,
+    "category": "BBQ"
+  },
+  {
+    "id": "kg-roll-1",
+    "shopId": "karachi-grill",
+    "name": "Chicken Roll",
+    "description": "Shredded tikka chicken, chutney, onions in a crispy roll",
+    "price": 320,
+    "category": "Rolls"
+  },
+  {
+    "id": "kg-roll-2",
+    "shopId": "karachi-grill",
+    "name": "BBQ Beef Roll",
+    "description": "Tender beef, smoky BBQ, caramelised onions, in a roll",
+    "price": 380,
+    "category": "Rolls"
+  },
+  {
+    "id": "kg-drink-1",
+    "shopId": "karachi-grill",
+    "name": "Mango Lassi",
+    "description": "Fresh Chaunsa mango blended with creamy yoghurt",
+    "price": 220,
+    "category": "Drinks"
+  },
+  {
+    "id": "kg-drink-2",
+    "shopId": "karachi-grill",
+    "name": "Soft Drink (Can)",
+    "description": "Pepsi / 7-Up / Mountain Dew",
+    "price": 80,
+    "category": "Drinks"
+  },
+
+  {
+    "id": "lc-biryani-1",
+    "shopId": "lahori-chaska",
+    "name": "Chicken Biryani (Full)",
+    "description": "Aromatic basmati, bone-in chicken, kewra, fried onions",
+    "price": 550,
+    "category": "Biryani"
+  },
+  {
+    "id": "lc-biryani-2",
+    "shopId": "lahori-chaska",
+    "name": "Beef Biryani (Full)",
+    "description": "Slow-cooked beef, whole spices, layered basmati rice",
+    "price": 620,
+    "category": "Biryani"
+  },
+  {
+    "id": "lc-biryani-3",
+    "shopId": "lahori-chaska",
+    "name": "Biryani (Half)",
+    "description": "Half portion of chicken biryani — perfect for one",
+    "price": 280,
+    "category": "Biryani"
+  },
+  {
+    "id": "lc-karahi-1",
+    "shopId": "lahori-chaska",
+    "name": "Chicken Karahi",
+    "description": "Desi ghee, tomatoes, green chillies, fresh ginger. Serves 2-3",
+    "price": 900,
+    "category": "Karahi"
+  },
+  {
+    "id": "lc-karahi-2",
+    "shopId": "lahori-chaska",
+    "name": "Mutton Karahi",
+    "description": "Premium mutton, slow-cooked in traditional spices. Serves 2",
+    "price": 1400,
+    "category": "Karahi"
+  },
+  {
+    "id": "lc-desi-1",
+    "shopId": "lahori-chaska",
+    "name": "Daal Makhni",
+    "description": "Slow-cooked black lentils, butter, cream — rich and comforting",
+    "price": 320,
+    "category": "Desi"
+  },
+  {
+    "id": "lc-desi-2",
+    "shopId": "lahori-chaska",
+    "name": "Naan (2 pcs)",
+    "description": "Fresh tandoor naan, soft and buttery",
+    "price": 80,
+    "category": "Desi"
+  },
+  {
+    "id": "lc-drink-1",
+    "shopId": "lahori-chaska",
+    "name": "Rooh Afza Sharbat",
+    "description": "Chilled rose sharbat with milk",
+    "price": 150,
+    "category": "Drinks"
+  },
+
+  {
+    "id": "pc-pizza-1",
+    "shopId": "pizza-corner",
+    "name": "BBQ Chicken Pizza (Large)",
+    "description": "Smoky BBQ sauce, grilled chicken, red onions, capsicum",
+    "price": 1100,
+    "category": "Pizza"
+  },
+  {
+    "id": "pc-pizza-2",
+    "shopId": "pizza-corner",
+    "name": "Beef Overloaded (Large)",
+    "description": "Spiced beef mince, mozzarella, jalapeños, olives",
+    "price": 1200,
+    "category": "Pizza"
+  },
+  {
+    "id": "pc-pizza-3",
+    "shopId": "pizza-corner",
+    "name": "Margherita (Medium)",
+    "description": "San Marzano tomato, fresh mozzarella, basil",
+    "price": 700,
+    "category": "Pizza"
+  },
+  {
+    "id": "pc-pasta-1",
+    "shopId": "pizza-corner",
+    "name": "Creamy Chicken Pasta",
+    "description": "Penne, grilled chicken, white sauce, parmesan, herbs",
+    "price": 650,
+    "category": "Pasta"
+  },
+  {
+    "id": "pc-pasta-2",
+    "shopId": "pizza-corner",
+    "name": "Arabiata Pasta",
+    "description": "Penne in spicy tomato sauce, garlic, fresh basil",
+    "price": 550,
+    "category": "Pasta"
+  },
+  {
+    "id": "pc-burger-1",
+    "shopId": "pizza-corner",
+    "name": "Crispy Chicken Burger",
+    "description": "Fried chicken fillet, chipotle mayo, lettuce, tomato",
+    "price": 520,
+    "category": "Burgers"
+  },
+  {
+    "id": "pc-dessert-1",
+    "shopId": "pizza-corner",
+    "name": "Nutella Lava Cake",
+    "description": "Warm chocolate cake with Nutella centre, vanilla ice cream",
+    "price": 380,
+    "category": "Desserts"
+  },
+
+  {
+    "id": "cw-chai-1",
+    "shopId": "chai-wala",
+    "name": "Karak Chai (Cup)",
+    "description": "Strong, milky chai with cardamom — the original",
+    "price": 60,
+    "category": "Chai"
+  },
+  {
+    "id": "cw-chai-2",
+    "shopId": "chai-wala",
+    "name": "Kashmiri Chai",
+    "description": "Pink noon chai with cream and crushed pistachios",
+    "price": 150,
+    "category": "Chai"
+  },
+  {
+    "id": "cw-chai-3",
+    "shopId": "chai-wala",
+    "name": "Green Tea (Cup)",
+    "description": "Loose-leaf green tea with honey and lemon",
+    "price": 80,
+    "category": "Chai"
+  },
+  {
+    "id": "cw-snack-1",
+    "shopId": "chai-wala",
+    "name": "Samosa (2 pcs)",
+    "description": "Crispy beef samosas with mint chutney",
+    "price": 120,
+    "category": "Snacks"
+  },
+  {
+    "id": "cw-snack-2",
+    "shopId": "chai-wala",
+    "name": "Pakora Platter",
+    "description": "Mixed vegetable & chicken pakoras, fresh from the fryer",
+    "price": 250,
+    "category": "Snacks"
+  },
+  {
+    "id": "cw-paratha-1",
+    "shopId": "chai-wala",
+    "name": "Aloo Paratha",
+    "description": "Crispy stuffed paratha with spiced potato, butter on top",
+    "price": 180,
+    "category": "Parathas"
+  },
+  {
+    "id": "cw-paratha-2",
+    "shopId": "chai-wala",
+    "name": "Keema Paratha",
+    "description": "Flaky paratha stuffed with spiced minced beef",
+    "price": 220,
+    "category": "Parathas"
+  },
+  {
+    "id": "cw-sandwich-1",
+    "shopId": "chai-wala",
+    "name": "Club Sandwich",
+    "description": "Triple-decker with chicken, egg, cheese, and veggies",
+    "price": 320,
+    "category": "Sandwiches"
+  },
+
+  {
+    "id": "dd-nihari-1",
+    "shopId": "desi-dawat",
+    "name": "Beef Nihari (Bowl)",
+    "description": "Slow-cooked overnight beef shanks, served with naan",
+    "price": 450,
+    "category": "Nihari"
+  },
+  {
+    "id": "dd-nihari-2",
+    "shopId": "desi-dawat",
+    "name": "Nihari Full (for 2)",
+    "description": "Generous portion of nihari with 4 naan. Weekend special!",
+    "price": 850,
+    "category": "Nihari"
+  },
+  {
+    "id": "dd-paya-1",
+    "shopId": "desi-dawat",
+    "name": "Paya Soup (Bowl)",
+    "description": "Traditional lamb trotters cooked in rich spiced broth",
+    "price": 400,
+    "category": "Paya"
+  },
+  {
+    "id": "dd-hp-1",
+    "shopId": "desi-dawat",
+    "name": "Halwa Puri (Plate)",
+    "description": "Sooji halwa, 2 puris, aloo bhaji, chana — the full breakfast",
+    "price": 350,
+    "category": "Halwa Puri"
+  },
+  {
+    "id": "dd-desi-1",
+    "shopId": "desi-dawat",
+    "name": "Achar Gosht",
+    "description": "Tangy pickled meat curry with whole spices",
+    "price": 650,
+    "category": "Desi"
+  }
+]
