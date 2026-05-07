@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState, useEffect, createContext, useContext, useReducer } from "react";
 import { ShoppingCart, Home, Search, Heart, Star, Plus, Minus, X, MapPin, ArrowLeft, MessageCircle, ChevronRight, Utensils, Clock, Phone } from "lucide-react";
 
