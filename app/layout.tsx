@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 import { CartDrawer } from '@/components/CartDrawer'
 import { ToastNotification } from '@/components/Toast'
+import { Analytics } from '@vercel/analytics/next'
 
 export const metadata: Metadata = {
   title: "It's Kacha Khuh — Local Food on WhatsApp",
@@ -38,6 +39,7 @@ export default function RootLayout({
         </div>
         <CartDrawer />
         <ToastNotification />
+        <Analytics />
       </body>
     </html>
   )
