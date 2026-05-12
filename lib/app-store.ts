@@ -46,18 +46,42 @@ export interface ShopOverride {
   whatsapp?: string
 }
 
+export interface Review {
+  id: string
+  orderId: string
+  customerId: string
+  customerName: string
+  shopId: string
+  shopName: string
+  ratings: {
+    taste: number
+    food: number
+    serving: number
+    delivery: number
+    rider: number
+  }
+  comment?: string
+  createdAt: string
+}
+
 interface AppStore {
   orders: OrderRecord[]
+  reviews: Review[]
   savedShops: SavedShop[]
   shopRankings: Record<string, number>
   shopProducts: ShopProduct[]
   shopOverrides: ShopOverride[]
   customShops: Shop[]
+  followedShops: string[] // Array of shop IDs
 
   addOrder: (order: Omit<OrderRecord, 'id' | 'createdAt' | 'status'>) => void
   updateOrderStatus: (orderId: string, status: OrderRecord['status']) => void
+  addReview: (review: Omit<Review, 'id' | 'createdAt'>) => void
+  getReviewsByShop: (shopId: string) => Review[]
   toggleSaveShop: (shopId: string) => void
   isShopSaved: (shopId: string) => boolean
+  toggleFollowShop: (shopId: string) => void
+  isShopFollowed: (shopId: string) => boolean
   getOrdersByShop: (shopId: string) => OrderRecord[]
   getOrdersByCustomer: (customerId: string) => OrderRecord[]
   addCustomShop: (shop: Shop) => void
@@ -127,6 +151,8 @@ export const useAppStore = create<AppStore>()(
           total: 1200, status: 'delivered', createdAt: new Date(Date.now() - 15 * 86400000).toISOString(),
         },
       ],
+      reviews: [],
+      followedShops: [],
       savedShops: [],
       shopRankings: {
         'karachi-grill': 1,
@@ -143,6 +169,27 @@ export const useAppStore = create<AppStore>()(
         set({ orders: [...get().orders, { ...orderData, id: `ord-${Date.now()}`, status: 'pending', createdAt: new Date().toISOString() }] })
       },
 
+      addReview: (reviewData) => {
+        const { ratings, shopId } = reviewData
+        const isPerfect = Object.values(ratings).every(r => r === 5)
+        const pointsToAdd = isPerfect ? 0.10 : 0.001
+
+        const newReview: Review = {
+          ...reviewData,
+          id: `rev-${Date.now()}`,
+          createdAt: new Date().toISOString(),
+        }
+
+        set({
+          reviews: [...get().reviews, newReview],
+          customShops: get().customShops.map(s => 
+            s.id === shopId ? { ...s, points: (s.points || 0) + pointsToAdd } : s
+          )
+        })
+      },
+
+      getReviewsByShop: (shopId) => get().reviews.filter((r) => r.shopId === shopId),
+
       updateOrderStatus: (orderId, status) => {
         set({ orders: get().orders.map((o) => o.id === orderId ? { ...o, status } : o) })
       },
@@ -158,6 +205,18 @@ export const useAppStore = create<AppStore>()(
       },
 
       isShopSaved: (shopId) => !!get().savedShops.find((s) => s.shopId === shopId),
+
+      toggleFollowShop: (shopId) => {
+        const followed = get().followedShops
+        if (followed.includes(shopId)) {
+          set({ followedShops: followed.filter((id) => id !== shopId) })
+        } else {
+          set({ followedShops: [...followed, shopId] })
+        }
+      },
+
+      isShopFollowed: (shopId) => get().followedShops.includes(shopId),
+
       getOrdersByShop: (shopId) => get().orders.filter((o) => o.shopId === shopId),
       getOrdersByCustomer: (customerId) => get().orders.filter((o) => o.customerId === customerId),
 
@@ -223,6 +282,8 @@ export const useAppStore = create<AppStore>()(
       name: 'kacha-khuh-app-data',
       partialize: (state) => ({
         orders: state.orders,
+        reviews: state.reviews,
+        followedShops: state.followedShops,
         savedShops: state.savedShops,
         shopRankings: state.shopRankings,
         shopProducts: state.shopProducts,

@@ -1,0 +1,53 @@
+[
+  {
+    "id": "ceo-001",
+    "name": "Abdul Wahab Khan",
+    "email": "ceo@shandaar.pk",
+    "password": "ceo123",
+    "role": "ceo",
+    "phone": "03001234567",
+    "gender": "Male",
+    "createdAt": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": "shop-001",
+    "name": "Ahmed Raza",
+    "email": "karachi@grill.pk",
+    "password": "shop123",
+    "role": "shopkeeper",
+    "shopId": "karachi-grill",
+    "phone": "03001234567",
+    "gender": "Male",
+    "createdAt": "2024-01-10T00:00:00Z"
+  },
+  {
+    "id": "cust-001",
+    "name": "Ali Hassan",
+    "email": "ali@gmail.com",
+    "password": "pass123",
+    "role": "customer",
+    "phone": "03001111111",
+    "gender": "Male",
+    "createdAt": "2024-03-01T00:00:00Z"
+  },
+  {
+    "id": "user-1778621803887",
+    "email": "ali.google@gmail.com",
+    "name": "Ali Khan (Google)",
+    "avatar": "https://i.pravatar.cc/150?u=google-ali",
+    "role": "customer",
+    "provider": "google",
+    "providerId": "goog-123456789",
+    "createdAt": "2026-05-12T21:36:43.887Z"
+  },
+  {
+    "id": "user-1778621838719",
+    "email": "wa.user@shandaar.pk",
+    "name": "WhatsApp User",
+    "avatar": "https://i.pravatar.cc/150?u=wa-user",
+    "role": "customer",
+    "provider": "whatsapp",
+    "providerId": "wa-923001234567",
+    "createdAt": "2026-05-12T21:37:18.719Z"
+  }
+]

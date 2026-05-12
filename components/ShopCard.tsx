@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { Star, Clock, MessageCircle, MapPin, Heart } from 'lucide-react'
+import { Star, Clock, MessageCircle, MapPin, Heart, UserPlus, UserCheck } from 'lucide-react'
 import type { Shop } from '@/lib/types'
 import { useAppStore } from '@/lib/app-store'
 import { cn } from '@/lib/utils'
@@ -12,8 +12,9 @@ interface ShopCardProps {
 }
 
 export function ShopCard({ shop, rank }: ShopCardProps) {
-  const { toggleSaveShop, isShopSaved, getShopOverride } = useAppStore()
+  const { toggleSaveShop, isShopSaved, getShopOverride, toggleFollowShop, isShopFollowed } = useAppStore()
   const saved = isShopSaved(shop.id)
+  const followed = isShopFollowed(shop.id)
 
   const override = getShopOverride(shop.id)
   const bannerUrl = override?.bannerUrl || shop.bannerUrl
@@ -64,6 +65,23 @@ export function ShopCard({ shop, rank }: ShopCardProps) {
             <Star className="w-3 h-3 text-yellow-400 fill-yellow-400" />
             <span className="text-white text-xs font-semibold">{shop.rating}</span>
           </div>
+
+          {/* Follow button */}
+          <button
+            onClick={(e) => {
+              e.preventDefault()
+              e.stopPropagation()
+              toggleFollowShop(shop.id)
+            }}
+            className={cn(
+              'absolute bottom-3 right-12 w-8 h-8 rounded-full backdrop-blur-sm flex items-center justify-center transition-all duration-200',
+              followed
+                ? 'bg-emerald-500 text-white shadow-glow-emerald'
+                : 'bg-black/50 text-white/70 hover:bg-emerald-500/70 hover:text-white'
+            )}
+          >
+            {followed ? <UserCheck className="w-3.5 h-3.5" /> : <UserPlus className="w-3.5 h-3.5" />}
+          </button>
 
           {/* Save button */}
           <button

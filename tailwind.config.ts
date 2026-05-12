@@ -9,22 +9,22 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'app-bg': '#0F172A',
-        'app-surface': '#1E293B',
-        'app-primary': '#FF6B2C',
-        'app-secondary': '#22C55E',
+        'app-bg': '#06100C',
+        'app-surface': '#0D1F1A',
+        'app-primary': '#059669',
+        'app-secondary': '#FBBF24',
         'app-text': '#F8FAFC',
         'app-muted': '#94A3B8',
         'app-border': 'rgba(148,163,184,0.15)',
       },
       fontFamily: {
-        sans: ['var(--font-inter)', 'sans-serif'],
+        sans: ['Outfit', 'sans-serif'],
       },
       boxShadow: {
-        card: '0 8px 30px rgba(0,0,0,0.35)',
-        'card-hover': '0 16px 40px rgba(0,0,0,0.5)',
-        'glow-orange': '0 0 20px rgba(255,107,44,0.35)',
-        'glow-green': '0 0 20px rgba(34,197,94,0.4)',
+        card: '0 8px 30px rgba(0,0,0,0.4)',
+        'card-hover': '0 16px 40px rgba(0,0,0,0.6)',
+        'glow-emerald': '0 0 20px rgba(5,150,105,0.4)',
+        'glow-gold': '0 0 25px rgba(251,191,36,0.5)',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

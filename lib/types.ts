@@ -9,6 +9,7 @@ export type Shop = {
   rating: number
   deliveryTime: string
   categories: string[]
+  points?: number         // Reward points for reviews/loyalty
 }
 
 export type Product = {
